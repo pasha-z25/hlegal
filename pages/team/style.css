@@ -1,0 +1,8 @@
+@import url('../../fonts/fonts.css');
+@import url('../../css/global.css');
+@import url('../../css/header.css');
+@import url('../../css/footer.css');
+
+.first-screen {
+  background-color: green;
+}
