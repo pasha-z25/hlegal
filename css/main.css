@@ -4,5 +4,44 @@
 @import url('footer.css');
 
 .first-screen {
-  background-color: yellow;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url('../images/Symbol.png') no-repeat center/contain;
+}
+
+.tabs_wrapper .nav {
+  padding-right: 60px;
+  margin-right: 60px;
+  border-right: 4px solid rgba(255, 255, 255, 0.3);
+  width: 50%;
+}
+.tabs_wrapper .tab-content {
+  width: calc(50% - 60px);
+}
+
+.card .img-wrap {
+  height: 200px;
+}
+.card .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tabs_wrapper .nav::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tabs_wrapper .nav::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+
+.tabs_wrapper .nav::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.tabs_wrapper .nav {
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
 }

@@ -10,10 +10,20 @@
   <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" href="./assets/bootstrap-5.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
+  <script>
+    function scrollToElem(elem) {
+      event.preventDefault()
+      const target = document.querySelector(elem.hash)
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: "smooth"
+      })
+    }
+  </script>
 </head>
 
-<body class="d-flex flex-column">
-  <header class="py-4">
+<body class="d-flex flex-column bg-lightGray footer-line gradient-body">
+  <header class="header py-4">
     <div class="container">
       <h4>Header template</h4>
       <nav>
@@ -23,14 +33,97 @@
     </div>
   </header>
   <main class="flex-1">
-    <section class="first-screen py-4">
-      <div class="container">
-        <h1>Main page</h1>
+    <section class="gradient">
+      <div class="first-screen py-4">
+        <div class="container text-center">
+          <h1>you legal solutions provider</h1>
+          <a href="#about-us" class="toTop" onclick="scrollToElem(this)">
+            down
+            <!-- <img src="./images/top.png" alt="to top" width="50"> -->
+          </a>
+        </div>
+      </div>
+      <div class="tabs_wrapper py-5">
+        <div class="container">
+          <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills text-end" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <h5 class="tab_btn active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</h5>
+              <h5 class="tab_btn" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</h5>
+              <h5 class="tab_btn" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</h5>
+              <h5 class="tab_btn" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</h5>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                aria-labelledby="v-pills-home-tab">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione dolores totam magni. Aliquid aut
+                  delectus eligendi dolorum porro, minus commodi iste minima, aspernatur eveniet quod consequuntur sint
+                  laborum ipsam. Rerum!
+                </p>
+
+              </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione dolores totam magni. Aliquid aut
+                delectus
+                eligendi dolorum porro, minus commodi iste minima, aspernatur eveniet quod consequuntur sint laborum
+                ipsam.
+                Rerum!
+              </div>
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione dolores totam magni. Aliquid aut
+                delectus
+                eligendi dolorum porro, minus commodi iste minima, aspernatur eveniet quod consequuntur sint laborum
+                ipsam.
+                Rerum!
+              </div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione dolores totam magni. Aliquid aut
+                delectus
+                eligendi dolorum porro, minus commodi iste minima, aspernatur eveniet quod consequuntur sint laborum
+                ipsam.
+                Rerum!
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 pb-3">
+            <div class="card">
+              <div class="img-wrap">
+                <img src="./images/Publication-3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 pb-3">
+            <div class="card">
+              <div class="img-wrap">
+                <img src="./images/Publication-3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 pb-3">
+            <div class="card">
+              <div class="img-wrap">
+                <img src="./images/Publication-3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about-us" class="py-5 bg-lightGray"></section>
   </main>
-  <footer class="py-4">
-    <div class="container">
+  <footer class="footer bg-lightGray">
+    <div class="container py-4">
       <h5>Footer template</h5>
     </div>
   </footer>
